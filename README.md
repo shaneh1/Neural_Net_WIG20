@@ -1,6 +1,2 @@
 # Neural_Net_WIG20
-Neural Network to predict the following days closing price of WIG20.
-I developed this neural network in an attempt to explore the feasibility of neural networks application in financial prediction.
-Reads in normalised data from the csv file (Open, High, Low, Close from day t), returns output of closing price for day t+1. The output is still in normalised form and needs to be de-normalised for real prediction price.
-Uses kersas with tensorflow backend.
-Uses softplus activation, adam optimiser and mean squared error.
+LSTM Neural Network which forecasts the closing price of the WIG20 for one day in advance. Takes in a csv file containing Date, Open, High, Low, and Close. A target variable of price on the day t is created which is equal to closing price on day t-1. Keras library is used to build LSTM neural network with 1 hidden layer, containing 100 neurons. The best RMSE achieved on the test set is approximately 23.
